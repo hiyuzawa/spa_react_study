@@ -7,6 +7,10 @@ var Sample = require('./react_sample_component');
 import MyModule2 from './my_module2';
 import Sample_ES2015 from './react_sample_component_es2015'
 
+import AppBar from 'material-ui/lib/app-bar';
+
+let injectTapEventPlugin = require("react-tap-event-plugin");
+injectTapEventPlugin();
 
 $(function(){
     console.log("Hello from javascript");
@@ -33,9 +37,18 @@ $(function(){
             this.setState({name: new_name});
         },
 
+        menuLeftIconTapped: function(e) {
+            console.log("menu left button clicked!!");
+        },
+
         render: function() {
             return (
                 <div className="Hello">
+                    <AppBar
+                        title="spa_react_study"
+                        iconClassNameRight="muidocs-icon-navigation-expand-more"
+                        onLeftIconButtonTouchTap={this.menuLeftIconTapped}
+                    />
                     Hello React World!! by {this.state.name}
                     <Sample
                         name={this.state.name}

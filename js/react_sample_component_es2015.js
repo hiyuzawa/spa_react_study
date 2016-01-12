@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import RaisedButton from 'material-ui/lib/raised-button';
 
 export default class Sample_ES2015 extends Component {
     constructor() {
@@ -15,7 +16,7 @@ export default class Sample_ES2015 extends Component {
         return (
             <div className="sample_es2015">
                 <p>Hello!! from Sample_ES2015 Component!! {this.props.date} by {this.props.name}</p>
-                <input type="button" onClick={this.clickCounter} value="count up!" />
+                <RaisedButton label="count up!" onTouchTap={this.clickCounter} />
                 <p>count: {this.state.counter}</p>
             </div>
         );

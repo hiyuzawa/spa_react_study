@@ -16,8 +16,10 @@
     "gulp": "^3.9.0",
     "gulp-webserver": "^0.9.1",
     "lodash": "^3.10.1",
+    "material-ui": "^0.14.2",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
+    "react-tap-event-plugin": "^0.2.1",
     "vinyl-source-stream": "^1.1.0"
   }
 }

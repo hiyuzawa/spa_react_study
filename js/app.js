@@ -1,6 +1,8 @@
 var _ = require("lodash");
 var my_module1 = require("./my_module1.js");
 
+import MyModule2 from './my_module2';
+
 $(function(){
     console.log("Hello from javascript");
     $("#title").text("Hello from jquery");
@@ -9,5 +11,8 @@ $(function(){
     _.each(array, function(element, index, array) {
         console.log(index + ":" + element + ":" + my_module1.add(element,index));
     });
+
+    const my_module2 = new MyModule2("hiyuzawa");
+    console.log(my_module2.sayHello());
 })
 

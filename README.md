@@ -2,6 +2,21 @@
 
 React を用いて SPA を作る初期段階の勉強メモ
 
+[Github](https://github.com/hiyuzawa/spa_react_study)
+
+```
+$ git clone https://github.com/hiyuzawa/spa_react_study.git
+$ cd spa_react_study/
+$ npm install
+$ ./node_modules/.bin/gulp   # http://localhost:8000/ で確認可能
+
+# ドキュメント内の CHECK POINT N の区切りでGit Commitし Tag v0.N を切ってあります
+
+$ git checkout refs/tags/v0.N  # これで CHECK POINT N の状態になる
+$ git checkout master # これで最終系に戻る
+```
+
+
 ## JavaScript
 
 * オブジェクト指向スクリプト言語
@@ -45,7 +60,7 @@ md      : off
 kokoが起動されたディレクトリをDocumentRootとしてウエブサーバが立ち上がる
 (Portは毎回空きポートをランダムに利用し異なる)
 
-_CHECK POINT 1_
+[_CHECK POINT 1_](https://github.com/hiyuzawa/spa_react_study/tree/5255824ac3832634ec91b13c943a9eab0fb794e5)
 
 ### Google Hosted Libraries
 
@@ -55,7 +70,7 @@ Googleが気前よくJavaScriptで有名なライブラリをCDN経由で配信�
 軽く利用するときには使わせてもらうと便利
 
 
-_CHECK POINT 2_
+[_CHECK POINT 2_](https://github.com/hiyuzawa/spa_react_study/tree/1d13b41bb42303d8f606ce67748dfea8850bf41c)
 
 ## Node
 
@@ -98,7 +113,7 @@ node_modules/
 * module.exports = exports
 * require("my_module")
 
-_CHECK POINT 3_
+[_CHECK POINT 3_](https://github.com/hiyuzawa/spa_react_study/tree/455d772a6abf92653d8875672ea4669f16655728)
 
 ## browserify
 
@@ -123,7 +138,7 @@ $ ls -l bundle.js
 
 ※ bundle.js も .gitignoreに追加
 
-_CHECK POINT 4_
+[_CHECK POINT 4_](https://github.com/hiyuzawa/spa_react_study/tree/9f0806dc889186cedef4a8b2a3ecf095cc92562d)
 
 ## gulp
 
@@ -197,7 +212,7 @@ $ ./node_modules/.bin/gulp
 
 http://127.0.0.1:8000 でブラウザ確認できる. jsを編集すると自動でビルド&ブラウザリロードされる
 
-_CHECK POINT 5_
+[_CHECK POINT 5_](https://github.com/hiyuzawa/spa_react_study/tree/dab20bcd26ef0d342853902ff84afb7677660472)
 
 ## ES2015(ES6) & Babel
 
@@ -247,7 +262,7 @@ import MyModule2 from './my_module2';
 const my_module2 = new MyModule2("hoge");   // 変数宣言const, let (ES2015)
 ```
 
-_CHECK POINT 6_
+[_CHECK POINT 6_](https://github.com/hiyuzawa/spa_react_study/tree/ab7b106c8781fdc2be99092f614cdc0f1f73bdca)
 
 ## React による SPA
 
@@ -326,7 +341,7 @@ gulpfile.js は以下のように babelコンパイル時にreact適応すれば
     );
 ```
 
-_CHECK POINT 7_
+[_CHECK POINT 7_](https://github.com/hiyuzawa/spa_react_study/tree/5b617ce7202973c40fd6700869a50d691ce77f3b)
 
 Reactで作るアプリケーションはコンポーネントを定義してルートコンポーネントにスタックしていくイメージで作成します。
 イメージ的には以下な感じ。
@@ -363,7 +378,7 @@ require(Component-C)
     * getInitialState()
     * this.setState(...)
 
-_CHECK POINT 8_
+[_CHECK POINT 8_](https://github.com/hiyuzawa/spa_react_study/tree/a01db423c38006ab9680e682ed8f4e43cb1d80c8 )
 
 ### すこしAdvanceなReactの利用法
 
@@ -373,7 +388,7 @@ _CHECK POINT 8_
 
 まあ、実際に動かしてソース見た方が早い。
 
-_CHECK POINT 9_
+[_CHECK POINT 9_](https://github.com/hiyuzawa/spa_react_study/tree/4b2563cf3dd35d2de644f4144000bc64d0488151)
 
 #### refs
 
@@ -385,7 +400,7 @@ _CHECK POINT 9_
 ReactDOM.findDOMNode(this.refs.hoge)
 ```
 
-_CHECK POINT 10_
+[_CHECK POINT 10_](https://github.com/hiyuzawa/spa_react_study/tree/6253d76d59a4b9ba0939d3c8215fceb3e4e1429e)
 
 
 ## Redux (flux)
@@ -444,7 +459,7 @@ render() {
             ...
 ```
 
-_CHECK POINT 11_
+[_CHECK POINT 11_](https://github.com/hiyuzawa/spa_react_study/tree/ad0440273a8ed77f896f161958f7789ef01ecd5d)
 
 おわり.
 

@@ -1,1 +1,4 @@
-console.log("Hello from javascript");
+$(function(){
+    console.log("Hello from javascript");
+    $("#title").text("Hello from jquery");
+})

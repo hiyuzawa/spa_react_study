@@ -21,18 +21,31 @@ $(function(){
     console.log(my_module2.sayHello());
 
     var Hello = React.createClass({
+
+        getInitialState: function() {
+            return {
+                name: "hiyuzawa",
+                date: "2016-01-12"
+            };
+        },
+
+        changeName: function(new_name) {
+            this.setState({name: new_name});
+        },
+
         render: function() {
             return (
                 <div className="Hello">
-                    Hello React World!! by {this.props.name}
+                    Hello React World!! by {this.state.name}
                     <Sample
-                        name={this.props.name}
-                        date="2016-01-12"
+                        name={this.state.name}
+                        date={this.state.date}
+                        chageName={this.changeName}
                         />
 
                     <Sample_ES2015
-                        name={this.props.name}
-                        date="2016-01-12"
+                        name={this.state.name}
+                        date={this.state.date}
                         />
                 </div>
             );
